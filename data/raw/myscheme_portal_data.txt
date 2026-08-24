@@ -1,0 +1,87 @@
+Are you sure you want to sign out?
+
+What is myScheme, and how is it different from other government portals?
+
+myScheme is a national platform for accessing a wide range of government schemes from both the Central & State/UT Governments. It is a one-stop platform for search & discovery of government schemes based on demographic details. Unlike traditional government portals, myScheme brings together schemes from the Central Government, State Governments, and Union Territories on a single platform and helps users find relevant schemes based on their eligibility.
+
+How will myScheme help common citizens?
+
+The myScheme platform simplifies access to government schemes by enabling citizens to discover relevant schemes in one place, eliminating the need to visit multiple departmental websites or review extensive scheme guidelines to check their eligibility.
+
+How does myScheme work?
+
+The myScheme platform follows a simple and user-friendly three-step process to help citizens discover government schemes for which they are eligible: Step 1: The user enters basic details such as demographic, income, social category, etc. Step 2: Based on the information provided, myScheme displays relevant schemes from hundreds of government schemes for the user. Step 3: The user can select from the list of eligible schemes and get more information from the dedicated scheme page with detailed knowledge, FAQs, and application process and navigate to the respective application URL to apply.
+
+What is the procedure for knowing the right scheme on the myScheme platform?
+
+To find the right scheme on the myScheme platform, citizens can begin by visiting the platform's official website. Once on the homepage, they will find the 'Find Schemes for You' feature, which allows users to enter their demographic details, such as age, gender, income level, category, etc. Once these details are submitted, the platform will provide a list of relevant schemes based on the user's profile.
+
+What information about a particular scheme can I find on myScheme?
+
+The myScheme platform provides comprehensive information on each scheme, including eligibility criteria, benefits offered, application procedure, and the documents required to avail the scheme. It also features a dedicated Frequently Asked Questions (FAQs) section to address common queries related to the scheme.
+
+What are the broad categories under which schemes are available on myScheme?
+
+The schemes available on the myScheme platform are broadly classified into 15 categories based on their nature of benefits and target beneficiaries. These categories include Agriculture, Rural & Environment; Banking, Financial Services & Insurance; Business & Entrepreneurship; Education & Learning; Health & Wellness; Housing & Shelter; Public Safety, Law & Justice; Science, IT & Communications; Skills & Employment; Social Welfare & Empowerment; Sports & Culture; Transport & Infrastructure; Travel & Tourism; Utility & Sanitation; and Women & Child.
+
+Does the myScheme platform provide multilingual support?
+
+Yes, the myScheme platform currently supports content in 15 languages, including English. Support for additional Indian languages will be provided soon.
+
+Does the myScheme platform showcase both Central and State/UT-specific schemes?
+
+Yes, the myScheme platform currently provides access to over 4,700 Central Government and State/UT Government schemes. Additional schemes will continue to be onboarded on the platform on an ongoing basis.
+
+I could not find a specific scheme on the myScheme platform. What should I do?
+
+Currently, more than 4,700 Central Government and State/UT Government schemes have been onboarded on the myScheme platform. Additional schemes are being added on a regular basis. Citizens may share details or suggestions regarding any missing scheme through the "Get in Touch" section available on the platform.
+
+I found some errors in the content of the schemes in the Marathi language. What should I do?
+
+In case any discrepancy is noticed in the Marathi version of the scheme content, citizens are advised to refer to the English version for clarification. If the issue persists, the respective Ministry's or Department's official portal may be referred to for the most accurate and updated information. Additionally, the issue may be reported by sending an email to support-myscheme[at]digitalindia[dot]gov[dot]in.
+
+I want to explore schemes under which scholarships are provided to students. Is this possible through myScheme?
+
+Yes, the myScheme platform offers a keyword-based search feature that enables citizens to easily search, explore, and identify schemes based on the type and extent of benefits provided, including scholarships for students.
+
+I want to apply for a specific scheme and would like to know the documents required for application. Can I find this information on myScheme?
+
+Yes, the myScheme platform provides a complete list of documents required for applying to each scheme, enabling citizens to prepare and apply with ease.
+
+Can I apply for schemes through myScheme?
+
+Currently, the myScheme platform redirects users to the respective scheme application page of the concerned Ministry or Department. In upcoming phases, it is envisaged that citizens will be able to apply for schemes through myScheme portal/UMANG application.
+
+To explore schemes best suited to a user, what details need to be provided in the "Personalised Search" feature of myScheme?
+
+To use the "Personalised Search" feature of myScheme, users are required to provide basic profile details such as gender, age, marital status, state, place of residence (urban or rural), social category, disability status, minority status, employment status, and other relevant information. This helps in identifying schemes most relevant to the user's profile.
+
+What is the "Check Eligibility Questionnaire" feature?
+
+The "Check Eligibility Questionnaire" feature focuses on scheme-specific eligibility criteria and enables users to verify their eligibility through a simple Yes/No-based questionnaire. Based on the responses provided, users can quickly assess whether they are eligible for a particular scheme.
+
+Does myScheme have a chatbot facility, and how does it help citizens?
+
+Yes, myScheme has deployed a voice-enabled, multilingual AI-powered chatbot to assist citizens in discovering relevant government schemes. The chatbot provides personalized and instant responses to user queries, simplifies scheme discovery through conversational assistance, and enhances government-citizen interaction by offering an engaging and user-friendly experience.
+
+What are the key features of the AI Chatbot on myScheme?
+
+The myScheme AI Chatbot offers voice and text-based interactions, bilingual support in Hindi and English, context-aware conversations, session-based chat history, and options to copy and share responses, ensuring a seamless and user-friendly experience.
+
+How can I provide my feedback regarding the content of the schemes?
+
+myScheme platform offers a "Was this helpful?" feedback section at the bottom of each scheme page, allowing users to rate the content from 1 to 5 stars and share their experiences, suggestions, or feedback. Users can also send detailed feedback via email to support-myscheme@digitalindia.gov.in, helping ensure continuous improvement and responsiveness of the platform.
+
+How can a user sign up or sign in on myScheme?
+
+myScheme is integrated with MeriPehchaan (National Single Sign-On), enabling users to sign up or sign in using their MeriPehchaan credentials. Users can browse and search government schemes without signing in. However, signing in allows users to save their profile, bookmark schemes, and receive personalized recommendations based on their saved details.
+
+How can I search a scheme on the myScheme platform?
+
+The myScheme platform provides multiple ways to search and discover schemes, including search by scheme name or keywords, personalized recommendations, filtering by State/UT or Central Government schemes, browsing by scheme benefit categories, and using the AI-powered chatbot for guided assistance.
+
+4th Floor, NeGD, Electronics Niketan, 6 CGO Complex, Lodhi Road, New Delhi - 110003, India
+
+support-myscheme[at]digitalindia[dot]gov[dot]in
+
+(011) 24303714 (9:00 AM to 5:30 PM)

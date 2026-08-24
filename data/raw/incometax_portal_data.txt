@@ -1,0 +1,309 @@
+e-filing and Centralized Processing Center
+
+e-Filing of Income Tax Return or Forms and other value added services & Intimation, Rectification, Refund and other Income Tax Processing Related Queries
+
+Tax Information Network - NSDL
+
+Queries related to PAN & TAN application for Issuance / Update through NSDL
+
+Queries related to AIS, TIS, SFT Preliminary response, Response to e-campaigns or e-Verification
+
+.cls-1 { fill: none; } .cls-2 { fill: rgba(0, 0, 0, 0.6); }
+
+tspan { white-space: pre } .shp0 { fill: none } .shp1 { fill: #6e6e6e }
+
+.prefix__cls-2 { fill: rgba(0, 0, 0, .6) }
+
+Individual/HUFSalaried EmployeesGuidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitAssisted filingDownloadsBusiness/ProfessionGuidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitAssisted filingDownloadsSenior / Super Senior CitizenGuidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitAssisted filingDownloadsNon ResidentGuidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitAssisted filingDownloadsHindu Undivided Family (HUF)Guidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitAssisted filingDownloads
+
+Salaried EmployeesGuidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitAssisted filingDownloads
+
+Guidance to file Tax Return
+
+Return / Forms applicable to me
+
+Deductions on which I can get tax benefit
+
+Business/ProfessionGuidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitAssisted filingDownloads
+
+Guidance to file Tax Return
+
+Return / Forms applicable to me
+
+Deductions on which I can get tax benefit
+
+Senior / Super Senior CitizenGuidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitAssisted filingDownloads
+
+Guidance to file Tax Return
+
+Return / Forms applicable to me
+
+Deductions on which I can get tax benefit
+
+Non ResidentGuidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitAssisted filingDownloads
+
+Guidance to file Tax Return
+
+Return / Forms applicable to me
+
+Deductions on which I can get tax benefit
+
+Hindu Undivided Family (HUF)Guidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitAssisted filingDownloads
+
+Guidance to file Tax Return
+
+Return / Forms applicable to me
+
+Deductions on which I can get tax benefit
+
+CompanyDomestic CompanyReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitDownloadsForeign CompanyReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitDownloads
+
+Domestic CompanyReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitDownloads
+
+Return / Forms applicable to me
+
+Deductions on which I can get tax benefit
+
+Foreign CompanyReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitDownloads
+
+Return / Forms applicable to me
+
+Deductions on which I can get tax benefit
+
+Non-CompanyAOP/BOI/Trust/AJPReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitDownloadsFirm/LLPGuidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitDownloadsLocal AuthorityReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitDownloads
+
+AOP/BOI/Trust/AJPReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitDownloads
+
+Return / Forms applicable to me
+
+Deductions on which I can get tax benefit
+
+Firm/LLPGuidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitDownloads
+
+Guidance to file Tax Return
+
+Return / Forms applicable to me
+
+Deductions on which I can get tax benefit
+
+Local AuthorityReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitDownloads
+
+Return / Forms applicable to me
+
+Deductions on which I can get tax benefit
+
+Tax Professionals & OthersChartered AccountantsRegistrationService Availablee-Return IntermediariesAPI SpecificationsERI ListExternal AgencyCentral & State Government Department/Approved Undertaking AgencyRBI Approved BanksTax Deductor & CollectorRegistrationService Available
+
+Chartered AccountantsRegistrationService Available
+
+e-Return IntermediariesAPI SpecificationsERI List
+
+External AgencyCentral & State Government Department/Approved Undertaking AgencyRBI Approved Banks
+
+Central & State Government Department/Approved Undertaking Agency
+
+Tax Deductor & CollectorRegistrationService Available
+
+Individual/HUFSalaried EmployeesGuidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitAssisted filingDownloadsBusiness/ProfessionGuidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitAssisted filingDownloadsSenior / Super Senior CitizenGuidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitAssisted filingDownloadsNon ResidentGuidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitAssisted filingDownloadsHindu Undivided Family (HUF)Guidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitAssisted filingDownloads
+
+Salaried EmployeesGuidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitAssisted filingDownloads
+
+Guidance to file Tax Return
+
+Return / Forms applicable to me
+
+Deductions on which I can get tax benefit
+
+Business/ProfessionGuidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitAssisted filingDownloads
+
+Guidance to file Tax Return
+
+Return / Forms applicable to me
+
+Deductions on which I can get tax benefit
+
+Senior / Super Senior CitizenGuidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitAssisted filingDownloads
+
+Guidance to file Tax Return
+
+Return / Forms applicable to me
+
+Deductions on which I can get tax benefit
+
+Non ResidentGuidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitAssisted filingDownloads
+
+Guidance to file Tax Return
+
+Return / Forms applicable to me
+
+Deductions on which I can get tax benefit
+
+Hindu Undivided Family (HUF)Guidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitAssisted filingDownloads
+
+Guidance to file Tax Return
+
+Return / Forms applicable to me
+
+Deductions on which I can get tax benefit
+
+CompanyDomestic CompanyReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitDownloadsForeign CompanyReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitDownloads
+
+Domestic CompanyReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitDownloads
+
+Return / Forms applicable to me
+
+Deductions on which I can get tax benefit
+
+Foreign CompanyReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitDownloads
+
+Return / Forms applicable to me
+
+Deductions on which I can get tax benefit
+
+Non-CompanyAOP/BOI/Trust/AJPReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitDownloadsFirm/LLPGuidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitDownloadsLocal AuthorityReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitDownloads
+
+AOP/BOI/Trust/AJPReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitDownloads
+
+Return / Forms applicable to me
+
+Deductions on which I can get tax benefit
+
+Firm/LLPGuidance to file Tax ReturnReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitDownloads
+
+Guidance to file Tax Return
+
+Return / Forms applicable to me
+
+Deductions on which I can get tax benefit
+
+Local AuthorityReturn / Forms applicable to meTax slabsDeductions on which I can get tax benefitDownloads
+
+Return / Forms applicable to me
+
+Deductions on which I can get tax benefit
+
+Tax Professionals & OthersChartered AccountantsRegistrationService Availablee-Return IntermediariesAPI SpecificationsERI ListExternal AgencyCentral & State Government Department/Approved Undertaking AgencyRBI Approved BanksTax Deductor & CollectorRegistrationService Available
+
+Chartered AccountantsRegistrationService Available
+
+e-Return IntermediariesAPI SpecificationsERI List
+
+External AgencyCentral & State Government Department/Approved Undertaking AgencyRBI Approved Banks
+
+Central & State Government Department/Approved Undertaking Agency
+
+Tax Deductor & CollectorRegistrationService Available
+
+1. Which Act will be applicable for making tax payments?
+
+If you are making a tax payment for Tax Year 2026–27 or onwards, the Income Tax Act, 2025 will apply.For payments pertaining to periods before Tax Year 2026–27 (i.e., Assessment Year 2026–27 or earlier), you should select the Income Tax Act, 1961.
+
+2. For payment of Self Assessment Tax for AY 2026–27, which Act will be applicable?
+
+For payment of Self Assessment Tax for AY 2026–27, the Income Tax Act, 1961 will apply.For payments pertaining to Tax Year 2026–27 onwards, the Income Tax Act, 2025 should be selected.
+
+3. For payment of Advance Tax for Tax Year 2026–27, which Act will be applicable?
+
+For Advance Tax relating to Tax Year 2026–27, the applicable law is the Income Tax Act, 2025.
+
+4. Which payments are not applicable under the Income Tax Act, 2025?
+
+Under the Income Tax Act, 2025, the following tax payments have been omitted and are therefore not applicable:1.    Surtax (102)2.    Tax on Distributed Profit of Companies (106)3.    Tax on Distributed Income to Unit Holders (107)4.    Tax on Distributed Income of Domestic Company for buy back of shares under Section 115QA of the Income Tax Act, 1961 (108)5.    Payment of Demand / Penalty / Interest under the Black Money Act, 2015 (109)6.    Banking Cash Transaction Tax (0036)7.    Fringe Benefit Tax (0026)8.    Hotel Receipts Tax (0023)9.    Interest Tax (0024)10.    Estate Duty (0031)11.    Wealth Tax (0032)12.    Gift Tax (0033)13.    Equalization Levy (119)
+
+5. Is Assessment Year (AY) the same as Tax Year?
+
+No. The concept of Assessment Year exists under the Income Tax Act, 1961, whereas the Tax Year terminology has been introduced through the Income Tax Act, 2025.There is no concept of Assessment Year under the Income Tax Act, 2025.
+
+A Tax Year means the twelve month financial year commencing on 1st April.For example, Tax Year 2026–27 under the Income Tax Act, 2025 refers to Financial Year 2026–27.
+
+7. When are challans saved under the Saved Drafts tab and how long are they retained?
+
+When a user clicks “Save as Draft”, the details filled till that point are saved and an entry is created under the Saved Drafts tab.Saved draft challans (before CRN generation) are retained for 15 days from the date of the last update.
+
+8. What actions can be taken for challans saved under the Saved Drafts tab?
+
+The taxpayer can edit or delete saved draft challans using the Actions tab.A checkbox is also provided to select one or multiple drafts for deletion.
+
+9. When are challans saved under the Generated Challans tab?
+
+The Generated Challans tab displays challans for which CRN has been generated but CIN has not been generated, received, or updated.
+
+10. What actions can be taken for challans under the Generated Challans tab and how long are they retained?
+
+Available actions depend on the payment mode selected and include:•    Pay (for Net Banking, Debit Card, or Payment Gateway)•    Download Challan Form / Mandate Form (for OTC and NEFT/RTGS)•    Copy and View Details (common for all modes)A generated challan expires after T+15 days from CRN generation.Expired challans remain visible under the Generated Challans tab for 30 days from the “Valid Till” date.
+
+11. What actions can be taken under the Payment History tab?
+
+Taxpayers can:•    Download the challan receipt (PDF format)•    View Details to see challan summary•    Copy a challan to initiate a new payment with pre filled details
+
+12. What payment modes are available on the e-Filing portal?
+
+Tax payments can be made using challans generated from the e Filing portal through the following modes:•    Net Banking•    Debit Card•    Payment Gateway (Net Banking / Debit Card / Credit Card / UPI)•    NEFT / RTGS (via Mandate Form)•    Over the Counter (OTC) at selected bank branches (cash, cheque, DD)
+
+13. How can I make a tax payment using Net Banking?
+
+The taxpayer must log in to the e Filing portal, navigate to e File → e Pay Tax, initiate a new payment, select the applicable tax details, choose Net Banking as the payment mode, verify the details, and complete the payment.After successful payment, confirmation is sent via email and SMS, and the challan receipt is available under Payment History.
+
+14. How can I make a tax payment using Over the Counter (OTC) mode?
+
+After generating the challan on the e Filing portal and selecting Pay at Bank Counter, the challan form (CRN) must be printed and submitted at the selected bank branch using cash, cheque, or demand draft.Payment confirmation and challan receipt are available under Payment History once payment is completed.
+
+15. How can I make a tax payment using NEFT/RTGS mode?
+
+After selecting NEFT/RTGS as the payment mode, a Mandate Form is generated.The taxpayer must print the mandate form and make payment via NEFT/RTGS either at a bank branch or through net banking after adding the beneficiary details.Upon successful payment, challan details appear under Payment History.
+
+16. How can I make a tax payment using Debit Card?
+
+The taxpayer selects Debit Card as the payment mode, verifies the details, and completes the transaction through the selected bank.Successful payment confirmation is sent via email and SMS.
+
+17. How can I make a tax payment using Payment Gateway?
+
+After selecting Payment Gateway, the taxpayer is redirected to the payment gateway website to complete the payment using Net Banking, Debit Card, Credit Card, or UPI.Transaction charges may vary between gateways.Confirmation is sent once payment is successful.
+
+The CSI file contains vital challan information such as payment amount, date, section, and type of tax.It is used during TDS return filing to verify whether tax payments have been correctly accounted for.
+
+19. Who can download the CSI file?
+
+Only TAN users can download the CSI file by logging in with TAN as User ID.
+
+20. How can I download the CSI file?
+
+After logging in with TAN, go to e File → e Pay Tax → Payment History, apply a payment date filter, and download the CSI file once the option is enabled.CSI files cannot be downloaded using Assessment Year or Payment Type filters.
+
+21. What is the maximum period for which the CSI file can be downloaded?
+
+CSI files can be downloaded only for a maximum period of 24 months using the date range filter.
+
+22. Can I download the CSI file for periods prior to 01 July 2022?
+
+No. CSI files for periods prior to 01 July 2022 cannot be downloaded from the e Filing portal.For earlier periods, users must download the file from the Protean (NSDL) portal.
+
+23. In which format is the CSI file downloaded?
+
+The CSI file is downloaded in .csi format, which is compatible with TDS return preparation utilities such as RPU.
+
+24. How can I check my tax payment status without logging in?
+
+Users can check payment status through Know Your Payment Status under pre login services on the e Filing portal by entering PAN, CRN, and mobile number, followed by OTP verification.
+
+25. From where can I get details like BSR code, Challan number, and date of payment?
+
+These details are available under the Payment History tab by clicking the Action button for the respective challan.
+
+About UsAbout the PortalHistory of Direct TaxationVision, Mission, ValuesVision, Mission, Values (Hindi)Who We AreRight to InformationOrganization & Functionse-Filing Calendar 2026Tax Payer CharterTax Payer Charter (Hindi)
+
+History of Direct Taxation
+
+Vision, Mission, Values (Hindi)
+
+Contact UsHelpdesk NumbersGrievancesView GrievanceHelp
+
+Using the PortalWebsite PoliciesAccessibility StatementSite MapBrowser Support
+
+Related SitesIncome Tax IndiaProtean (previously NSDL)TRACES
+
+Last reviewed and updated on :current time
+
+This site is best viewed in 1024 * 768 resolution with latest version of Chrome, Firefox, Safari and Internet Explorer.
+
+Copyright @ Income Tax Department, Ministry of Finance, Government of India. All Rights Reserved.
