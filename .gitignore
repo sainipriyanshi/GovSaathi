@@ -1,18 +1,53 @@
-# Python-generated files
-__pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
-
-# Virtual environments
-.venv
-
-# Environment & Secret Files
+# Environment and secrets
 .env
-*.env
+.env.*
+!.env.example
 
-# Local Chroma Database Cache (keep repo clean)
-chroma_db/
-data/chroma_db/
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache and test files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Django
+*.sqlite3
+django_admin/staticfiles/
+django_admin/media/
+
+# React
+node_modules/
+dist/
+build/
+.vite/
+
+# RAG generated data
+rag/data/chroma_db/
+rag/data/*/.cache/
+rag/data/vector_store/
+rag/data/embeddings/
+rag/data/models/
+rag/data/downloads/
+
+# Logs
+*.log
+
+# Editors and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local research document
+research ppr project .pdf
+# Large downloaded RAG PDFs
+rag/data/raw/myscheme_pdfs/
+
+# Local RAG dataset archive
+rag/data/GovSaathi Dataset.zip
+rag/data/raw/myscheme_pdfs/

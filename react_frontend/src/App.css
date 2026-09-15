@@ -1,0 +1,283 @@
+:root {
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+
+  color: #172033;
+  background: #f4f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, #e6f0ff 0, transparent 34rem),
+    #f4f7fb;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+main.bg-light {
+  min-height: 100vh;
+  padding: 24px 0 !important;
+  background:
+    radial-gradient(circle at top left, #e6f0ff 0, transparent 34rem),
+    #f4f7fb !important;
+}
+
+main.bg-light > .container {
+  width: min(1180px, 100%);
+  min-height: calc(100vh - 48px);
+}
+
+/* Main Bootstrap card */
+main.bg-light .card {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 48px);
+  overflow: hidden;
+  border: 1px solid #dbe5f0 !important;
+  border-radius: 20px;
+  background: rgb(255 255 255 / 92%);
+  box-shadow: 0 16px 45px rgb(28 63 96 / 10%) !important;
+}
+
+/* Existing green Card.Header */
+main.bg-light .card-header {
+  padding: 24px !important;
+  border: 0;
+  background: linear-gradient(135deg, #198754, #126b43) !important;
+}
+
+main.bg-light .card-header h1 {
+  font-size: clamp(1.55rem, 3vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+main.bg-light .card-header p {
+  max-width: 600px;
+  color: rgb(255 255 255 / 88%);
+  font-size: 0.95rem;
+}
+
+/* New chat button */
+main.bg-light .card-header .btn {
+  min-width: 88px;
+  white-space: nowrap;
+}
+
+/* Existing Card.Body */
+main.bg-light .card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  padding: 0 !important;
+  background: #fff;
+}
+
+/* Error alert */
+main.bg-light .alert {
+  margin: 16px 20px 0;
+  border-radius: 12px;
+}
+
+main.bg-light .alert-heading {
+  font-size: 1rem;
+}
+
+/* Message area created by the existing JSX */
+main.bg-light .card-body > .mb-4 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 320px;
+  max-height: calc(100vh - 300px);
+  overflow-y: auto;
+  margin: 0 !important;
+  padding: 24px;
+  background: #f8fafd;
+  scroll-behavior: smooth;
+}
+
+/* Empty-state text from existing JSX */
+main.bg-light .card-body > .mb-4 > .text-center {
+  display: grid;
+  flex: 1;
+  min-height: 260px;
+  place-items: center;
+  margin: 0 !important;
+  padding: 32px !important;
+  color: #64748b !important;
+}
+
+/* MessageBubble layout */
+main.bg-light .card-body > .mb-4 > * {
+  flex-shrink: 0;
+}
+
+main.bg-light .card-body > .mb-4 .d-flex {
+  width: 100%;
+}
+
+main.bg-light .card-body > .mb-4 .bg-light {
+  max-width: min(78%, 760px);
+  border: 1px solid #dbe5f0 !important;
+  border-radius: 16px !important;
+  color: #26374a !important;
+  background: #fff !important;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+/* Thinking indicator */
+main.bg-light .card-body > .mb-4 > .d-flex:last-child .bg-light {
+  color: #6b7c90 !important;
+}
+
+/* ChatInput wrapper without changing JSX */
+main.bg-light .card-body > form,
+main.bg-light .card-body > div:last-child form {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  padding: 16px 20px 20px;
+  border-top: 1px solid #e5ebf2;
+  background: #fff;
+}
+
+main.bg-light .card-body textarea,
+main.bg-light .card-body input {
+  flex: 1;
+  min-height: 48px;
+  max-height: 150px;
+  resize: vertical;
+}
+
+main.bg-light .card-body button[type="submit"] {
+  min-width: 96px;
+  min-height: 48px;
+  flex-shrink: 0;
+}
+
+/* Citation links if rendered by MessageBubble */
+main.bg-light a {
+  color: #1769aa;
+  text-decoration: none;
+}
+
+main.bg-light a:hover {
+  text-decoration: underline;
+}
+
+/* Tablet and mobile */
+@media (max-width: 768px) {
+  main.bg-light {
+    padding: 12px 0 !important;
+  }
+
+  main.bg-light > .container {
+    min-height: calc(100vh - 24px);
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  main.bg-light .card {
+    min-height: calc(100vh - 24px);
+    border-radius: 14px;
+  }
+
+  main.bg-light .card-header {
+    padding: 18px !important;
+  }
+
+  main.bg-light .card-header > div {
+    align-items: flex-start !important;
+    flex-direction: column;
+  }
+
+  main.bg-light .card-header .btn {
+    align-self: stretch;
+    width: 100%;
+  }
+
+  main.bg-light .card-body > .mb-4 {
+    min-height: 300px;
+    max-height: calc(100vh - 290px);
+    padding: 16px 12px;
+  }
+
+  main.bg-light .card-body > .mb-4 .bg-light {
+    max-width: 88%;
+  }
+
+  main.bg-light .card-body > form,
+  main.bg-light .card-body > div:last-child form {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  main.bg-light .card-body button[type="submit"] {
+    width: 100%;
+  }
+
+  main.bg-light .alert {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 420px) {
+  main.bg-light .card-header {
+    padding: 16px !important;
+  }
+
+  main.bg-light .card-header h1 {
+    font-size: 1.45rem;
+  }
+
+  main.bg-light .card-header p {
+    font-size: 0.85rem;
+  }
+
+  main.bg-light .card-body > .mb-4 .bg-light {
+    max-width: 94%;
+    padding: 10px 12px !important;
+    font-size: 0.93rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+  }
+}

@@ -88,7 +88,7 @@ def query_govsaathi(request: QueryRequest):
         # Extract source metadata cleanly
         extracted_sources = []
         for doc in docs:
-            src = doc.metadata.get("source", "Unknown Document")
+            src = doc.metadata.get("source_url") or doc.metadata.get("source", "Unknown Document")
             if src not in extracted_sources:
                 extracted_sources.append(src)
 

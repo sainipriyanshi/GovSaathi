@@ -1,4 +1,4 @@
-# RAG raw data
+﻿# RAG raw data
 
 The downloaded MyScheme PDF collection is intentionally excluded from GitHub
 because it is large, contains duplicate files, and may include third-party
@@ -6,14 +6,10 @@ source documents.
 
 Place the local PDF collection at:
 
-```text
 rag/data/raw/myscheme_pdfs/
-```
 
-Expected local structure:
+The expected local PDF structure is:
 
-```text
 rag/data/raw/myscheme_pdfs/text_data/
-```
 
 Run the download or ingestion scripts to recreate the local data when needed.
