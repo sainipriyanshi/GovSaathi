@@ -51,3 +51,6 @@ rag/data/raw/myscheme_pdfs/
 # Local RAG dataset archive
 rag/data/GovSaathi Dataset.zip
 rag/data/raw/myscheme_pdfs/
+
+# Downloaded MyScheme PDF collection
+rag/data/raw/myscheme_pdfs/
