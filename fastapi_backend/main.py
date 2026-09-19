@@ -1,6 +1,8 @@
 import json
+import logging
 from contextlib import asynccontextmanager
 from datetime import datetime, timezone
+from fastapi.responses import StreamingResponse
 
 from fastapi import (
     Depends,
@@ -8,6 +10,7 @@ from fastapi import (
     Header,
     HTTPException,
     status,
+    Request,
 )
 from fastapi.security import (
     HTTPAuthorizationCredentials,
@@ -23,15 +26,39 @@ from database import Base, engine, get_db
 import secrets
 from models import ChatMessage, ChatSession
 
+logger = logging.getLogger(
+    "govsaathi.fastapi"
+)
+
 bearer_scheme = HTTPBearer(auto_error=False)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     async with engine.begin() as connection:
-        await connection.run_sync(Base.metadata.create_all)
+        await connection.run_sync(
+            Base.metadata.create_all
+        )
+
+    from pathlib import Path
+
+    from rag.src.config import INDEX_DIR
+    from rag.src.pipeline import RagPipeline
+
+    print(
+        "Loading GovSaathi RAG pipeline..."
+    )
+
+    app.state.rag_pipeline = RagPipeline(
+        index_dir=Path(INDEX_DIR),
+    )
+
+    print(
+        "GovSaathi RAG pipeline loaded."
+    )
 
     yield
 
+    app.state.rag_pipeline = None
     await engine.dispose()
 
 
@@ -208,7 +235,8 @@ async def verify_chat_session(
 
 @app.post("/api/chat", response_model=ChatResponse)
 async def chat(
-    request: ChatRequest,
+    request: Request,
+    chat_request: ChatRequest,
     credentials: HTTPAuthorizationCredentials | None = Depends(
         bearer_scheme
     ),
@@ -229,7 +257,152 @@ async def chat(
 
     result = await db.execute(
         select(ChatSession).where(
-            ChatSession.session_id == request.session_id,
+            ChatSession.session_id
+            == chat_request.session_id,
+            ChatSession.token
+            == credentials.credentials,
+        )
+    )
+
+    session = result.scalar_one_or_none()
+
+    if session is None:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid session or token",
+        )
+
+    rag_pipeline = request.app.state.rag_pipeline
+
+    if rag_pipeline is None:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="RAG pipeline is not available",
+        )
+
+    try:
+        rag_result = rag_pipeline.answer_query(
+            chat_request.query,
+            top_k=5,
+        )
+        
+    except Exception as exc:
+        logger.exception(
+            "RAG request failed for query: %s",
+            chat_request.query,
+        )
+
+        raise HTTPException(
+            status_code=(
+                status.HTTP_500_INTERNAL_SERVER_ERROR
+            ),
+            detail="RAG request failed",
+        ) from exc
+    
+
+    answer = rag_result.get(
+        "answer",
+        "No answer was generated.",
+    )
+
+    citations = []
+    seen_sources = set()
+
+    for source in rag_result.get(
+        "sources",
+        [],
+    ):
+        file_name = source.get(
+            "file_name",
+            "Unknown source",
+        )
+
+        source_path = source.get(
+            "source",
+            "Unknown source",
+        )
+
+        source_key = (
+            str(file_name).strip().lower()
+        )
+
+        if source_key in seen_sources:
+            continue
+
+        seen_sources.add(source_key)
+
+        citations.append(
+            {
+                "title": file_name,
+                "source": source_path,
+                "page": None,
+            }
+        )
+
+
+    created_at = datetime.now(timezone.utc)
+
+    user_message = ChatMessage(
+        session_id=chat_request.session_id,
+        role="user",
+        content=chat_request.query,
+        detected_language=chat_request.language,
+        created_at=created_at,
+    )
+
+    assistant_message = ChatMessage(
+        session_id=chat_request.session_id,
+        role="assistant",
+        content=answer,
+        citations_json=json.dumps(citations),
+        detected_language=chat_request.language,
+        created_at=created_at,
+    )
+
+
+    db.add_all(
+        [
+            user_message,
+            assistant_message,
+        ]
+    )
+
+    await db.commit()
+
+    return {
+        "session_id": chat_request.session_id,
+        "query": chat_request.query,
+        "answer": answer,
+        "citations": citations,
+        "detected_language": chat_request.language,
+        "created_at": created_at,
+}
+
+
+@app.post("/api/chat/stream")
+async def stream_chat(
+    request: Request,
+    chat_request: ChatRequest,
+    credentials: HTTPAuthorizationCredentials | None = Depends(
+        bearer_scheme
+    ),
+    db: AsyncSession = Depends(get_db),
+):
+    if credentials is None:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Authorization header is required",
+        )
+
+    if credentials.scheme.lower() != "bearer":
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Use Bearer authentication",
+        )
+
+    result = await db.execute(
+        select(ChatSession).where(
+            ChatSession.session_id == chat_request.session_id,
             ChatSession.token == credentials.credentials,
         )
     )
@@ -242,49 +415,33 @@ async def chat(
             detail="Invalid session or token",
         )
 
-    answer = (
-        "This is a mocked GovSaathi answer. "
-        "The real RAG pipeline will be connected later."
+    rag_pipeline = request.app.state.rag_pipeline
+
+    if rag_pipeline is None:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="RAG pipeline is not available",
+        )
+
+    async def generate():
+        try:
+            for chunk in rag_pipeline.stream_answer_query(
+                chat_request.query,
+                top_k=5,
+            ):
+                yield chunk
+
+        except Exception:
+            logger.exception(
+                "Streaming RAG request failed for query: %s",
+                chat_request.query,
+            )
+            yield "\n\nRAG request failed."
+
+    return StreamingResponse(
+        generate(),
+        media_type="text/plain; charset=utf-8",
     )
-
-    citations = [
-        {
-            "title": "Government Scheme Knowledge Base",
-            "source": "Django admin entries",
-            "page": None,
-        }
-    ]
-
-    created_at = datetime.now(timezone.utc)
-
-    user_message = ChatMessage(
-        session_id=request.session_id,
-        role="user",
-        content=request.query,
-        detected_language=request.language,
-        created_at=created_at,
-    )
-
-    assistant_message = ChatMessage(
-        session_id=request.session_id,
-        role="assistant",
-        content=answer,
-        citations_json=json.dumps(citations),
-        detected_language=request.language,
-        created_at=created_at,
-    )
-
-    db.add_all([user_message, assistant_message])
-    await db.commit()
-
-    return {
-        "session_id": request.session_id,
-        "query": request.query,
-        "answer": answer,
-        "citations": citations,
-        "detected_language": request.language,
-        "created_at": created_at,
-    }
 
 
 @app.get("/api/history/{session_id}")

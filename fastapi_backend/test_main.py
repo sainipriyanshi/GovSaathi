@@ -1,35 +1,38 @@
 from fastapi.testclient import TestClient
+
 from main import app
+
 
 client = TestClient(app)
 
 
-def test_chat():
+def test_create_session():
+    response = client.post("/api/session")
+
+    assert response.status_code == 200
+
+    data = response.json()
+
+    assert "session_id" in data
+    assert "token" in data
+    assert data["session_id"]
+    assert data["token"]
+
+
+def test_chat_requires_authorization():
     response = client.post(
         "/api/chat",
         json={
             "session_id": "test-session",
-            "query": "Tell me about scholarships",
+            "query": "What is PM Vishwakarma scheme?",
+            "language": "en",
         },
     )
 
-    assert response.status_code == 200
-
-    data = response.json()
-
-    assert data["session_id"] == "test-session"
-    assert data["query"] == "Tell me about scholarships"
-    assert isinstance(data["answer"], str)
-    assert isinstance(data["citations"], list)
-    assert isinstance(data["detected_language"], str)
-    assert "created_at" in data
+    assert response.status_code in (401, 403)
 
 
-def test_history():
+def test_history_requires_authorization():
     response = client.get("/api/history/test-session")
 
-    assert response.status_code == 200
-
-    data = response.json()
-    assert data["session_id"] == "test-session"
-    assert "messages" in data
+    assert response.status_code in (401, 403)

@@ -10,6 +10,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from src.ingest import load_documents  # reuse the SAME loader ingest.py uses
 
 load_dotenv()
+hf_token = os.getenv("HF_TOKEN")
 
 VECTOR_DB_DIR = "data/chroma_db"
 
@@ -17,7 +18,13 @@ VECTOR_DB_DIR = "data/chroma_db"
 class HybridRetriever:
     def __init__(self):
         # 1. Dense retriever — reads the already-built Chroma index
-        self.embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-m3")
+        self.embeddings = HuggingFaceEmbeddings(
+            model_name="BAAI/bge-m3",
+            model_kwargs={
+                "token": hf_token,
+            },
+        )
+        
         self.vector_db = Chroma(
             persist_directory=VECTOR_DB_DIR,
             embedding_function=self.embeddings,

@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://127.0.0.1:8002";
+const API_BASE_URL = "http://127.0.0.1:8000";
 
 async function handleResponse(response, fallbackMessage) {
   if (!response.ok) {
@@ -67,4 +67,72 @@ export async function sendChat({
   });
 
   return handleResponse(response, "Could not send your message.");
+}
+
+
+export async function streamChat({
+  sessionId,
+  token,
+  query,
+  language = "en",
+  onChunk,
+}) {
+  const response = await fetch(`${API_BASE_URL}/api/chat/stream`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify({
+      session_id: sessionId,
+      query,
+      language,
+    }),
+  });
+
+  if (!response.ok) {
+    let message = "Could not stream your message.";
+
+    try {
+      const data = await response.json();
+      message = data.detail || message;
+    } catch {
+      // Keep fallback message.
+    }
+
+    throw new Error(message);
+  }
+
+  if (!response.body) {
+    throw new Error("Streaming is not supported by this browser.");
+  }
+
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder();
+
+  try {
+    while (true) {
+      const { value, done } = await reader.read();
+
+      if (done) {
+        break;
+      }
+
+      const chunk = decoder.decode(value, {
+        stream: true,
+      });
+
+      if (chunk) {
+        onChunk(chunk);
+      }
+    }
+
+    const finalChunk = decoder.decode();
+
+    if (finalChunk) {
+      onChunk(finalChunk);
+    }
+  } finally {
+    reader.releaseLock();
+  }
 }
