@@ -230,8 +230,7 @@ Open the admin panel at `http://127.0.0.1:8000/admin/`.
 ### FastAPI
 
 ```bash
-cd fastapi_backend
-uvicorn app.main:app --reload --port 8001
+python -m uvicorn main:app --app-dir .\fastapi_backend --reload --port 8001
 ```
 
 Open the API documentation at `http://127.0.0.1:8001/docs`.
