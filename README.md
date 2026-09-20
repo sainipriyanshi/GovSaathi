@@ -16,7 +16,7 @@ FastAPI API ───┘
       └── React frontend
 
 Standalone RAG pipeline
-(scraping → loading → chunking → embeddings → FAISS/ChromaDB → generation)
+(scraping → loading → chunking → embeddings → FAISS → generation)
       │
       └── integrated into FastAPI in Week 14–16
 ```
@@ -172,7 +172,7 @@ cleaning and chunking
     ↓
 embeddings
     ↓
-FAISS or ChromaDB index
+FAISS index
     ↓
 retrieval
     ↓
